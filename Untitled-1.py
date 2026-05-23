@@ -1,0 +1,61 @@
+# =========================
+# TEXT TO BINARY ENCODER
+# =========================
+
+def text_to_binary(text):
+    binary_result = []
+
+    for char in text:
+        ascii_number = ord(char)
+        binary = format(ascii_number, '08b')
+        binary_result.append(binary)
+
+    return ' '.join(binary_result)
+
+
+# =========================
+# BINARY TO TEXT DECODER
+# =========================
+
+def binary_to_text(binary_text):
+    text_result = []
+
+    binary_list = binary_text.split()
+
+    for binary in binary_list:
+        number = int(binary, 2)
+        character = chr(number)
+        text_result.append(character)
+
+    return ''.join(text_result)
+
+
+# =========================
+# MAIN FLOW
+# =========================
+
+def encoding_message(message):
+    encoded = text_to_binary(message)
+    print("Encoded:")
+    print(encoded)
+    return encoded
+
+
+def decoding_message(binary_input):
+    decoded = binary_to_text(binary_input)
+    print("\nDecoded:")
+    print(decoded)
+    return decoded
+
+while True:
+    encode_or_decode_request = input("Please enter ENCODE or DECODE: ").strip().upper()
+    if encode_or_decode_request == "ENCODE":
+        message = input("Enter message: ")
+        encoding_message(message)
+        break
+    elif encode_or_decode_request == "DECODE":
+        binary_input = input("Enter binary: ")
+        decoding_message(binary_input)
+        break
+    else:
+        print("Invalid option. Please choose ENCODE or DECODE.")
