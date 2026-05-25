@@ -1,4 +1,4 @@
-current_version = "v1.0.3"
+current_version = "v1.0.4"
 
 # =========================
 # TEXT TO BINARY ENCRYPTER
@@ -6,14 +6,11 @@ current_version = "v1.0.3"
 
 def text_to_binary(text):
     binary_result = []
-
     for char in text:
         ascii_number = ord(char)
         binary = format(ascii_number, '08b')
         binary_result.append(binary)
-
     return ' '.join(binary_result)
-
 
 # =========================
 # BINARY TO TEXT DECRYPTER
@@ -21,16 +18,12 @@ def text_to_binary(text):
 
 def binary_to_text(binary_text):
     text_result = []
-
     binary_list = binary_text.split()
-
     for binary in binary_list:
         number = int(binary, 2)
         character = chr(number)
         text_result.append(character)
-
     return ''.join(text_result)
-
 
 # =========================
 # MAIN FLOW
@@ -44,7 +37,6 @@ def encoding_message(message):
     print(encoded)
     return encoded
 
-
 def decoding_message(binary_input):
     decoded = binary_to_text(binary_input)
     print("Decoded message:")
@@ -54,7 +46,7 @@ def decoding_message(binary_input):
 valid_choice = False
 
 while not valid_choice:
-    encode_or_decode_request = input("Please either to ENCRYPT or DECRYPT a message: ").strip().upper()
+    encode_or_decode_request = input("Please choose either to ENCRYPT or DECRYPT a message: ").strip().upper()
     if encode_or_decode_request == "ENCRYPT":
         message = input("Enter message: ")
         encoding_message(message)
@@ -64,5 +56,5 @@ while not valid_choice:
         decoding_message(binary_input)
         valid_choice = True
     else:
-        print("Invalid option. Please choose either ENCRYPT or DECRYPT.")
+        print("Invalid option. Please type in either ENCRYPT or DECRYPT.")
         valid_choice = False
