@@ -31,29 +31,29 @@ def binary_to_text(binary_text):
 
 print(f"Welcome to Binary-Text Encrypter/Decrypter {current_version}")
 
-def encoding_message(message):
-    encoded = text_to_binary(message)
-    print("Encoded:")
-    print(encoded)
-    return encoded
+def encrypting_message(message):
+    encrypted = text_to_binary(message)
+    print("Encrypted message:")
+    print(encrypted)
+    return encrypted
 
-def decoding_message(binary_input):
-    decoded = binary_to_text(binary_input)
-    print("Decoded message:")
-    print(decoded)
-    return decoded
+def decrypting_message(binary_input):
+    decrypted = binary_to_text(binary_input)
+    print("Decrypted message:")
+    print(decrypted)
+    return decrypted
 
 valid_choice = False
 
 while not valid_choice:
-    encode_or_decode_request = input("Please choose either to ENCRYPT or DECRYPT a message: ").strip().upper()
-    if encode_or_decode_request == "ENCRYPT":
+    encrypt_or_decrypt_request = input("Please choose either to ENCRYPT or DECRYPT a message: ").strip().upper()
+    if encrypt_or_decrypt_request == "ENCRYPT":
         message = input("Enter message: ")
-        encoding_message(message)
+        encrypting_message(message)
         valid_choice = True
-    elif encode_or_decode_request == "DECRYPT":
+    elif encrypt_or_decrypt_request == "DECRYPT":
         binary_input = input("Enter binary: ")
-        decoding_message(binary_input)
+        decrypting_message(binary_input)
         valid_choice = True
     else:
         print("Invalid option. Please type in either ENCRYPT or DECRYPT.")
