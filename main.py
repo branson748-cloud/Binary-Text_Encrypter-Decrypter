@@ -34,7 +34,9 @@ def binary_to_text(binary_text):
 # MAIN FLOW
 # =========================
 
-print("Welcome to Binary-Text Encrypter/Decrypter v1")
+current_version = "v1.0.3"
+
+print(f"Welcome to Binary-Text Encrypter/Decrypter {current_version}")
 
 def encoding_message(message):
     encoded = text_to_binary(message)
@@ -45,13 +47,13 @@ def encoding_message(message):
 
 def decoding_message(binary_input):
     decoded = binary_to_text(binary_input)
-    print("\nDecoded:")
+    print("Decoded message:")
     print(decoded)
     return decoded
 
 valid_choice = False
 
-while valid_choice = False:
+while not valid_choice:
     encode_or_decode_request = input("Please either to ENCRYPT or DECRYPT a message: ").strip().upper()
     if encode_or_decode_request == "ENCRYPT":
         message = input("Enter message: ")
@@ -63,4 +65,4 @@ while valid_choice = False:
         valid_choice = True
     else:
         print("Invalid option. Please choose either ENCRYPT or DECRYPT.")
-				valid_choice = False
+        valid_choice = False
