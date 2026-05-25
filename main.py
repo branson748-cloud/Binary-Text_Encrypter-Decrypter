@@ -1,3 +1,5 @@
+current_version = "v1.0.3"
+
 # =========================
 # TEXT TO BINARY ENCRYPTER
 # =========================
@@ -33,8 +35,6 @@ def binary_to_text(binary_text):
 # =========================
 # MAIN FLOW
 # =========================
-
-current_version = "v1.0.3"
 
 print(f"Welcome to Binary-Text Encrypter/Decrypter {current_version}")
 
