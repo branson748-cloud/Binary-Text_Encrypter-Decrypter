@@ -1,4 +1,4 @@
-current_version = "v1.0.4"
+current_version = "v1.0.5"
 
 # =========================
 # TEXT TO BINARY ENCRYPTER
@@ -50,11 +50,11 @@ while not valid_choice:
     if encrypt_or_decrypt_request == "ENCRYPT":
         message = input("Enter message: ")
         encrypting_message(message)
-        valid_choice = True
+        valid_choice = False
     elif encrypt_or_decrypt_request == "DECRYPT":
         binary_input = input("Enter binary: ")
         decrypting_message(binary_input)
-        valid_choice = True
+        valid_choice = False
     else:
         print("Invalid option. Please type in either ENCRYPT or DECRYPT.")
         valid_choice = False
