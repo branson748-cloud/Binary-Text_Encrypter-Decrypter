@@ -3,7 +3,7 @@
 A simple Python application that converts text to binary and binary back to text.
 
 ## Version
-Current version: **v1.0.3**
+Current version: **v1.0.5**
 
 ## Features
 - **Text to Binary Encoding**: Convert any text message into its 8-bit binary representation
