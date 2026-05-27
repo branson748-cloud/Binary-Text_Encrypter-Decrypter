@@ -73,7 +73,7 @@ Please choose either to ENCRYPT or DECRYPT a message:
 Welcome to Binary-Text Encrypter/Decrypter v1.0.5
 Please choose either to ENCRYPT or DECRYPT a message: ENCRYPT
 Enter message: Hello
-Encoded:
+Encrypted message:
 01001000 01100101 01101100 01101100 01101111
 ```
 
@@ -82,7 +82,7 @@ Encoded:
 Welcome to Binary-Text Encrypter/Decrypter v1.0.5
 Please choose either to ENCRYPT or DECRYPT a message: DECRYPT
 Enter binary: 01001000 01100101 01101100 01101100 01101111
-Decoded message:
+Decrypted message:
 Hello
 ```
 
