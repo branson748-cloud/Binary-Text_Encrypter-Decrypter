@@ -6,8 +6,8 @@ A simple Python application that converts text to binary and binary back to text
 Current version: **v1.0.5**
 
 ## Features
-- **Text to Binary Encoding**: Convert any text message into its 8-bit binary representation
-- **Binary to Text Decoding**: Convert binary strings back to readable text
+- **Text to Binary Encrypting**: Convert any text message into its 8-bit binary representation
+- **Binary to Text Decrypting**: Convert binary strings back to readable text
 - **Interactive CLI**: User-friendly command-line interface for easy interaction
 - **Input Validation**: Ensures users select valid options (ENCRYPT or DECRYPT)
 
@@ -52,8 +52,8 @@ python main.py
 When you run the program, you'll be prompted to choose an action:
 
 ```
-Welcome to Binary-Text Encrypter/Decrypter v1.0.3
-Please either to ENCRYPT or DECRYPT a message: 
+Welcome to Binary-Text Encrypter/Decrypter v1.0.5
+Please choose either to ENCRYPT or DECRYPT a message: 
 ```
 
 **To ENCRYPT a message:**
@@ -71,7 +71,7 @@ Please either to ENCRYPT or DECRYPT a message:
 ### Encryption
 ```
 Welcome to Binary-Text Encrypter/Decrypter v1.0.3
-Please either to ENCRYPT or DECRYPT a message: ENCRYPT
+Please choose either to ENCRYPT or DECRYPT a message: ENCRYPT
 Enter message: Hello
 Encoded:
 01001000 01100101 01101100 01101100 01101111
@@ -80,7 +80,7 @@ Encoded:
 ### Decryption
 ```
 Welcome to Binary-Text Encrypter/Decrypter v1.0.3
-Please either to ENCRYPT or DECRYPT a message: DECRYPT
+Please choose either to ENCRYPT or DECRYPT a message: DECRYPT
 Enter binary: 01001000 01100101 01101100 01101100 01101111
 Decoded message:
 Hello
