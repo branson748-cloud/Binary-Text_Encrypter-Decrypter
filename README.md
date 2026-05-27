@@ -98,8 +98,8 @@ Hello
   - Converts each 8-bit binary to ASCII using `int(binary, 2)`
   - Reconstructs text using `chr()`
 
-- **`encoding_message(message)`**: User-facing function to encode text
-- **`decoding_message(binary_input)`**: User-facing function to decode binary
+- **`encrypting_message(message)`**: User-facing function to encode text
+- **`decrypting_message(binary_input)`**: User-facing function to decode binary
 
 ## Requirements
 - Python 3.x
